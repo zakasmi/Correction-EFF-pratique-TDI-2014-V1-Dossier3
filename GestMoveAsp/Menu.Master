@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Menu.master.cs" Inherits="GestMoveAsp.Menu" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+           <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" StaticSubMenuIndent="16px">
+            <Items>
+                <asp:MenuItem Text="|     Accueil     |" Value="Accueil" NavigateUrl="~/Accueil.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="     Ajouter Demande |" Value="Ajouter Demande" NavigateUrl="~/AjouterDemande.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="     Detail Demande |" Value="Detail Demande |" NavigateUrl="~/DetailDemande.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="      Consult Dernier  Demande|" Value="Consult Dernier Demande" NavigateUrl="~/DernierDemande.aspx"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Nombre Demande Web Serv.aspx" Text="      Nombre Demande Web Serv |" Value="Nombre Demande Web Serv |"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+    <div>
+     
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
